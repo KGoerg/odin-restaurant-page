@@ -39,6 +39,8 @@ import pawberryShortcakeImg from "./assets/pawberry-shortcake.jpg";
 
 const menuItems = [];
 
+const menuContainer = document.querySelector("#content");
+
 class menuItem {
     constructor(name, image, caption, description) {
         this.name = name;
@@ -49,16 +51,36 @@ class menuItem {
         this.sizeMedium = "$10.99";
         this.sizeLarge = "$15.99";
     }
+
+    createDiv() {
+        this.menuItemContainer = document.createElement("div");
+        this.menuItemContainer.classList.add("menu-item");
+        return this.menuItemContainer;
+    }
+
+    // createDivItems() {
+    //     this.menuItemHeader = document.createElement("h1");
+    //     this.menuItemHeader.textContent = this.name;
+    // }
+
+    appendDivs() {
+        menuContainer.appendChild(this.menuItemContainer);
+        // this.menuItemContainer.appendChild(this.menuItemHeader);
+    }
 }
 
 const classicButter = new menuItem("Classic Butter", classicButterImg, "Credit to Shameel Mukkath on Pexels.com", "A fan favorite! Enjoy a timeless flavor loved by all.");
 
-const cheddar = new menuItem("Cheddar", cheddarImg, "Credit to Terrance Barksdale on Pexels.com", "Every bite is a blast of cheesy goodness. Grab a bag today!");
+// const cheddar = new menuItem("Cheddar", cheddarImg, "Credit to Terrance Barksdale on Pexels.com", "Every bite is a blast of cheesy goodness. Grab a bag today!");
 
-const caramel = new menuItem("Caramel Corn", caramelImg, "Credit to Mikhail Nilov on Pexels.com", "Look no further for a sweet and crunchy snack crafted with love!");
+// const caramel = new menuItem("Caramel Corn", caramelImg, "Credit to Mikhail Nilov on Pexels.com", "Look no further for a sweet and crunchy snack crafted with love!");
 
-const pawberryShortcake = new menuItem("Pawberry Shortcake", pawberryShortcakeImg, "Credit to Mustafa Akin from Pexels.com", "Enjoy a fruity explosion with every bite of our Pawberry Shortcake! Strawberry and cream-coated popcorn pieces collide in this tasty, sweet treat!");
+// const pawberryShortcake = new menuItem("Pawberry Shortcake", pawberryShortcakeImg, "Credit to Mustafa Akin from Pexels.com", "Enjoy a fruity explosion with every bite of our Pawberry Shortcake! Strawberry and cream-coated popcorn pieces collide in this tasty, sweet treat!");
 
-menuItems.push(classicButter, cheddar, caramel, pawberryShortcake);
-console.log(menuItems);
+// menuItems.push(classicButter, cheddar, caramel, pawberryShortcake);
+// console.log(menuItems);
+
+console.log(classicButter);
+classicButter.createDiv();
+classicButter.appendDivs();
 
