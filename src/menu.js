@@ -3,7 +3,7 @@ import cheddarImg from "./assets/cheddar.jpg";
 import caramelImg from "./assets/caramel.jpg";
 import pawberryShortcakeImg from "./assets/pawberry-shortcake.jpg";
 
-const menuContainer = document.querySelector("#content");
+export const menuContainer = document.querySelector("#content");
 
 class menuItem {
 
@@ -18,7 +18,7 @@ class menuItem {
         this.sizeLarge = `Large: $${largePrice}`;
     }
 
-    // Creates the 
+    // Creates the container div, image container (which lets use use figure caption), and menu item container)
     createDivContainer() {
         this.menuItemContainer = document.createElement("div");
         this.menuItemContainer.classList.add("menu-item");
@@ -31,13 +31,17 @@ class menuItem {
     createContainerItems() {
         this.menuItemHeader = document.createElement("h1");
         this.menuItemHeader.textContent = this.name;
+
         this.menuItemImg = document.createElement("img");
         this.menuItemImg.src = this.image;
         this.menuItemImg.style.width = "250px";
+
         this.menuImageCaption = document.createElement("figcaption");
         this.menuImageCaption.textContent = this.caption;
+
         this.menuItemDescription = document.createElement("p");
         this.menuItemDescription.textContent = this.description;
+
         this.sizeSmallPrice = document.createElement("p");
         this.sizeSmallPrice.textContent = this.sizeSmall;
         this.sizeMediumPrice = document.createElement("p");
@@ -61,22 +65,24 @@ class menuItem {
 }
 
 //Creates menu items from class & class methods //
-const classicButter = new menuItem("Classic Butter", classicButterImg, "Credit to Shameel Mukkath on Pexels.com", "A fan favorite! Enjoy a timeless flavor loved by all.", 6.99, 10.99, 15.99);
-classicButter.createDivContainer();
-classicButter.createContainerItems();
-classicButter.appendDivs();
+export function createMenuItems() {
+    const classicButter = new menuItem("Classic Butter", classicButterImg, "Credit to Shameel Mukkath on Pexels.com", "A fan favorite! Enjoy a timeless flavor loved by all.", 6.99, 10.99, 15.99);
+    classicButter.createDivContainer();
+    classicButter.createContainerItems();
+    classicButter.appendDivs();
 
-const cheddar = new menuItem("Cheddar", cheddarImg, "Credit to Terrance Barksdale on Pexels.com", "Every bite is a blast of cheesy goodness. Grab a bag today!", 6.99, 10.99, 15.99);
-cheddar.createDivContainer();
-cheddar.createContainerItems();
-cheddar.appendDivs();
+    const cheddar = new menuItem("Cheddar", cheddarImg, "Credit to Terrance Barksdale on Pexels.com", "Every bite is a blast of cheesy goodness. Grab a bag today!", 6.99, 10.99, 15.99);
+    cheddar.createDivContainer();
+    cheddar.createContainerItems();
+    cheddar.appendDivs();
 
-const caramel = new menuItem("Caramel Corn", caramelImg, "Credit to Mikhail Nilov on Pexels.com", "Look no further for a sweet and crunchy snack crafted with love!", 7.99, 11.99, 16.99);
-caramel.createDivContainer();
-caramel.createContainerItems();
-caramel.appendDivs();
+    const caramel = new menuItem("Caramel Corn", caramelImg, "Credit to Mikhail Nilov on Pexels.com", "Look no further for a sweet and crunchy snack crafted with love!", 7.99, 11.99, 16.99);
+    caramel.createDivContainer();
+    caramel.createContainerItems();
+    caramel.appendDivs();
 
-const pawberryShortcake = new menuItem("Pawberry Shortcake", pawberryShortcakeImg, "Credit to Mustafa Akin from Pexels.com", "Enjoy a fruity explosion with every bite of our Pawberry Shortcake! Strawberry and cream-coated popcorn pieces collide in this tasty, sweet treat!", 7.99, 11.99, 16.99);
-pawberryShortcake.createDivContainer();
-pawberryShortcake.createContainerItems();
-pawberryShortcake.appendDivs();
+    const pawberryShortcake = new menuItem("Pawberry Shortcake", pawberryShortcakeImg, "Credit to Mustafa Akin from Pexels.com", "Enjoy a fruity explosion with every bite of our Pawberry Shortcake! Strawberry and cream-coated popcorn pieces collide in this tasty, sweet treat!", 7.99, 11.99, 16.99);
+    pawberryShortcake.createDivContainer();
+    pawberryShortcake.createContainerItems();
+    pawberryShortcake.appendDivs();
+};
