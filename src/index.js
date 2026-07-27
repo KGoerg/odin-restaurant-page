@@ -1,6 +1,7 @@
 import { createAboutPage } from "./about.js";
 import { createHomePage } from "./home.js";
 import { createMenuItems } from "./menu.js";
+import "./styles.css";
 
 createHomePage();
 
