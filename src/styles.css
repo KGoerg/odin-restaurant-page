@@ -54,7 +54,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Project code begins */
+@import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+
 body {
-  background-color: rgb(247, 246, 186);
+  background-color: palegoldenrod;
 }
 
+h1 {
+  font-size: 3rem;
+  font-family: "Snowburst One", system-ui;
+  font-weight: bold;
+  font-style: normal;
+  color: maroon;
+}
+
+#content img {
+  border-radius: 20px;
+}
+
+nav, #footer {
+  background-color: maroon;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+#footer {
+  color: palegoldenrod;
+  font-weight: bold;
+}
+
+nav button {
+  background-color: maroon;
+  border: 1px solid palegoldenrod;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  color: palegoldenrod;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav button:hover {
+  background-color: palegoldenrod;
+  color: maroon;
+  border: 1px solid palegoldenrod;
+  cursor: pointer;
+}
