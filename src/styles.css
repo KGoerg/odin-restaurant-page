@@ -94,6 +94,18 @@ figure h2 {
   font-weight: bold;
 }
 
+#content {
+  margin: 7px 200px 0 200px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(250, 246, 216);
+  border-left: 5px dotted maroon;
+  border-right: 5px dotted maroon;
+}
+
 #content figure {
   display: flex;
   flex-direction: column;
@@ -117,15 +129,20 @@ figure h2 {
 #content figcaption {
   font-style: italic;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 nav, #footer {
   background-color: maroon;
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+nav {
+  box-shadow: 3px 3px 10px gray;
 }
 
 #footer {
@@ -153,27 +170,13 @@ nav button:hover {
   cursor: pointer;
 }
 
-#content {
-  margin: 0 100px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  background-color: rgb(250, 246, 216);
-  border-left: 5px dotted maroon;
-  border-right: 5px dotted maroon;
-
-}
-
 .menu-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin-bottom: 25px;
   border-bottom: 3px dotted maroon;
-  padding-bottom: 25px;
-  width: 80vw;
+  padding-bottom: 30px;
 }
 
 .menu-item figure {
