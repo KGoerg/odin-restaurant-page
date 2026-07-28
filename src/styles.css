@@ -69,6 +69,17 @@ h1 {
   font-weight: bold;
   font-style: normal;
   color: maroon;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #content img {
@@ -105,4 +116,23 @@ nav button:hover {
   color: maroon;
   border: 1px solid palegoldenrod;
   cursor: pointer;
+}
+
+#content {
+  margin: 30px 50px 30px 50px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.menu-item figure {
+  grid-row: 2 / 3;
+  justify-self: center;
+}
+
+.menu-item h2 {
+  justify-self: center;
 }
