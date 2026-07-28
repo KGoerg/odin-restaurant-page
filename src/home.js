@@ -19,11 +19,15 @@ export function createHomePage() {
     const image = document.createElement("img");
     image.src = restaurantImage;
     image.alt = "A curious calico cat investigates a spread of honey and popcorn on a sunny outdoor ledge."
-    image.height = 300; 
+    image.height = 500; 
     imageContainer.appendChild(image);
 
     // Image caption //
     const imageCaption = document.createElement("figcaption");
     imageCaption.textContent = "Credit to Roman Odintsov on Pexels.com";
     imageContainer.appendChild(imageCaption);
+
+    // Footer//
+    const footer = document.querySelector("#footer");
+    footer.textContent = "Copyright © Kam's Animal Shelter 2025";
 }
