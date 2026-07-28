@@ -29,5 +29,5 @@ export function createHomePage() {
 
     // Footer//
     const footer = document.querySelector("#footer");
-    footer.textContent = "Copyright © Kam's Animal Shelter 2025";
+    footer.textContent = "Copyright © Popcorn & Paws 2026";
 }
