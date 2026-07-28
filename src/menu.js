@@ -44,10 +44,13 @@ class menuItem {
 
         this.sizeSmallPrice = document.createElement("p");
         this.sizeSmallPrice.textContent = this.sizeSmall;
+        this.sizeSmallPrice.classList.add("price")
         this.sizeMediumPrice = document.createElement("p");
         this.sizeMediumPrice.textContent = this.sizeMedium;
+        this.sizeSmallPrice.classList.add("price")
         this.sizeLargePrice = document.createElement("p");
         this.sizeLargePrice.textContent = this.sizeLarge;
+        this.sizeSmallPrice.classList.add("price")
     }
 
     appendDivs() {
