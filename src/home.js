@@ -19,7 +19,6 @@ export function createHomePage() {
     const image = document.createElement("img");
     image.src = restaurantImage;
     image.alt = "A curious calico cat investigates a spread of honey and popcorn on a sunny outdoor ledge."
-    image.height = 500; 
     imageContainer.appendChild(image);
 
     // Image caption //
