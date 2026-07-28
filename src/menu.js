@@ -55,8 +55,8 @@ class menuItem {
 
     appendDivs() {
         menuContainer.appendChild(this.menuItemContainer);
-        this.menuItemContainer.appendChild(this.menuItemHeader);
         this.menuItemContainer.appendChild(this.menuImageContainer);
+        this.menuImageContainer.appendChild(this.menuItemHeader);
         this.menuImageContainer.appendChild(this.menuItemImg);
         this.menuImageContainer.appendChild(this.menuImageCaption);
         this.menuItemContainer.appendChild(this.menuItemDescription);
