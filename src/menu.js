@@ -66,6 +66,11 @@ class menuItem {
 
 //Creates menu items from class & class methods //
 export function createMenuItems() {
+
+    const menuHeader = document.createElement("h1");
+    menuHeader.textContent = "Our Menu";
+    menuContainer.appendChild(menuHeader);
+    
     const classicButter = new menuItem("Classic Butter", classicButterImg, "Credit to Shameel Mukkath on Pexels.com", "A fan favorite! Enjoy a timeless flavor loved by all.", 6.99, 10.99, 15.99);
     classicButter.createDivContainer();
     classicButter.createContainerItems();
