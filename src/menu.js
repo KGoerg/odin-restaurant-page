@@ -41,6 +41,7 @@ class menuItem {
 
         this.menuItemDescription = document.createElement("p");
         this.menuItemDescription.textContent = this.description;
+        this.menuItemDescription.classList.add("menu-item-desc");
 
         this.sizeSmallPrice = document.createElement("p");
         this.sizeSmallPrice.textContent = this.sizeSmall;
