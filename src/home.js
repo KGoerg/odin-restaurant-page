@@ -19,6 +19,7 @@ export function createHomePage() {
     const image = document.createElement("img");
     image.src = restaurantImage;
     image.alt = "A curious calico cat investigates a spread of honey and popcorn on a sunny outdoor ledge."
+    image.setAttribute("id", "home-image");
     imageContainer.appendChild(image);
 
     // Image caption //
