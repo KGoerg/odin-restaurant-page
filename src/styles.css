@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Project code begins */
 @import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   background-color: palegoldenrod;
   display: grid;
@@ -66,7 +68,9 @@ body {
 
 p {
   max-width: 75ch;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 250;
 }
 
 h1 {
@@ -80,6 +84,14 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+figure h2 {
+  font-style: normal;
+  font-weight: bold;
 }
 
 #content figure {
@@ -92,6 +104,9 @@ h2 {
   border-radius: 20px;
   height: auto;
   width: 500px;
+  box-shadow: 3px 3px 6px gray;
+  margin-bottom: 10px;
+  border: 1px solid maroon;
 }
 
 #content #home-image {
@@ -116,6 +131,7 @@ nav, #footer {
 #footer {
   color: palegoldenrod;
   font-weight: bold;
+  font-family: "Sour Gummy", sans-serif;
 }
 
 nav button {
@@ -127,6 +143,7 @@ nav button {
   color: maroon;
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: "Sour Gummy", sans-serif;
 }
 
 nav button:hover {
@@ -137,7 +154,7 @@ nav button:hover {
 }
 
 #content {
-  margin: 0 50px;
+  margin: 0 100px;
   padding: 40px;
   display: flex;
   flex-direction: column;
