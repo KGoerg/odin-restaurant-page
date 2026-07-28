@@ -29,7 +29,7 @@ class menuItem {
     }
 
     createContainerItems() {
-        this.menuItemHeader = document.createElement("h1");
+        this.menuItemHeader = document.createElement("h2");
         this.menuItemHeader.textContent = this.name;
 
         this.menuItemImg = document.createElement("img");
