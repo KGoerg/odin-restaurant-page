@@ -8,7 +8,7 @@ export function createHomePage() {
 
         // P1 & P2 //
     const tagline = document.createElement("h2");
-    tagline.textContent = "You'll want to get your paws on our array of sweet and salty popcorns!"
+    tagline.textContent = "You'll want to get your paws on our array of salty and sweet popcorns!"
     homeContainer.appendChild(tagline);
 
     // Figure container for image and caption //
