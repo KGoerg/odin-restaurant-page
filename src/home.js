@@ -6,6 +6,11 @@ export function createHomePage() {
     heading.textContent = "Popcorn & Paws";
     homeContainer.appendChild(heading);
 
+        // P1 & P2 //
+    const tagline = document.createElement("h2");
+    tagline.textContent = "You'll want to get your paws on our array of sweet and salty popcorns!"
+    homeContainer.appendChild(tagline);
+
     // Figure container for image and caption //
     const imageContainer = document.createElement("figure");
     homeContainer.appendChild(imageContainer);
@@ -21,13 +26,4 @@ export function createHomePage() {
     const imageCaption = document.createElement("figcaption");
     imageCaption.textContent = "Credit to Roman Odintsov on Pexels.com";
     imageContainer.appendChild(imageCaption);
-
-    // P1 & P2 //
-    const welcome = document.createElement("p");
-    welcome.textContent = "Welcome to Popcorn & Paws, your local gourmet popcorn shop! Experience an imaginative array of salty and sweet flavors all under one roof."
-    homeContainer.appendChild(welcome);
-
-    const proceeds = document.createElement("p");
-    proceeds.textContent = "All proceeds are donated to our dedicated partner, Kam's Animal Shelter, to help animals in need find their forever homes."
-    homeContainer.appendChild(proceeds);
 }
