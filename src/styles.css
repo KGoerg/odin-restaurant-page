@@ -66,6 +66,7 @@ body {
 
 p {
   max-width: 75ch;
+  font-size: 1.3rem;
 }
 
 h1 {
@@ -78,6 +79,7 @@ h1 {
 
 h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #content figure {
@@ -89,7 +91,12 @@ h2 {
 #content img {
   border-radius: 20px;
   height: auto;
-  width: 900px;
+  width: 500px;
+}
+
+#content #home-image {
+  height: auto;
+  width: 800px;
 }
 
 #content figcaption {
@@ -112,12 +119,12 @@ nav, #footer {
 }
 
 nav button {
-  background-color: maroon;
-  border: 2px solid palegoldenrod;
-  border-radius: 20px;
-  height: 40px;
-  width: 100px;
-  color: palegoldenrod;
+  background-color: palegoldenrod;
+  border: 2px solid maroon;
+  border-radius: 80px;
+  height: 50px;
+  width: 90px;
+  color: maroon;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -130,12 +137,16 @@ nav button:hover {
 }
 
 #content {
-  margin: 0 50px 30px 50px;
+  margin: 0 50px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
+  background-color: rgb(250, 246, 216);
+  border-left: 5px dotted maroon;
+  border-right: 5px dotted maroon;
+
 }
 
 .menu-item {
@@ -145,12 +156,13 @@ nav button:hover {
   margin-bottom: 25px;
   border-bottom: 3px dotted maroon;
   padding-bottom: 25px;
+  width: 80vw;
 }
 
 .menu-item figure {
   grid-row: 1 / 3;
   justify-self: end;
-  margin-right: 120px;
+  margin-right: 150px;
 }
 
 .menu-item-desc {
