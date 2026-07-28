@@ -47,6 +47,6 @@ export function createAboutPage() {
 
     // Dog image captions //
     const dogImageCaption = document.createElement("figcaption");
-    dogImageCaption.textContent = 'Puppy sisters Peanut and Cashew give hopeful looks out their kennel at potential adopters. (Credit to Alin Luna on Pexels.com'
+    dogImageCaption.textContent = 'Puppy sisters Peanut and Cashew give hopeful looks out their kennel at potential adopters. (Credit to Alin Luna on Pexels.com)'
     dogImageContainer.appendChild(dogImageCaption);
 }
