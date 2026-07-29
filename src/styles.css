@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  background-color: palegoldenrod;
+  background-image: url("./assets/popcorn-background.jpg");
+  background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -102,6 +103,9 @@ figure h2 {
   align-items: center;
   gap: 30px;
   background-color: #FAFAFA;
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 50%;
 }
 
 #content figure {
