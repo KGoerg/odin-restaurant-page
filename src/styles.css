@@ -192,3 +192,7 @@ nav button:hover {
   align-self: end;
   margin-bottom: 30px;
 }
+
+.menu-prices p {
+  font-weight: bold;
+}
